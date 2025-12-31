@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite1" verbose="1" parallel="tests">
+    <listeners>
+        <listener class-name="utils.ListenersTestNg"></listener>
+    </listeners>
+    <test thread-count="2" name="Submit Order Test">
+        <classes>
+
+            <class name="org.hakuxe.tests.SimplesTest">
+                <methods>
+                    <include name="simpleTest"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
+
